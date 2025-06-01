@@ -13,10 +13,14 @@ public class oDArrSum {
         }
 
         //to find max , min and sum of elemts of array in java
+        //to find if a number is present or not in an array
 
         int max = arr[0];
         int min = arr[0];
         int sum = 0;
+        System.out.println("Enter the the value you want to serach");
+        int targetValue = scan.nextInt();
+        boolean found = false;
         for (int i = 0; i < 5; i++) {
             sum += arr[i];
 
@@ -26,6 +30,15 @@ public class oDArrSum {
             if(min > arr[i]) {
                 min = arr[i];
             }
+            if (arr[i] == targetValue) {
+                System.out.println("number " + targetValue +" found at index of : " + i );
+                found = true;
+                break;
+            }
+        }
+
+        if (!found) {
+            System.out.println("number " + targetValue + "is not found");
         }
 
 
