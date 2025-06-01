@@ -5,7 +5,7 @@ public  class arrAy {
         int n = arr.length;
 
         for (int i = 0; i < n; i++) {
-            System.out.println(arr[i] + " ");
+            System.out.println("Element at index" + i + arr[i] + " ");
         }
     }
 }
